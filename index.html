@@ -12,9 +12,19 @@
     <meta property="og:url" content="https://www.re-based.org/">
     <meta property="og:title" content="Re-Based - Democratizing News Media">
     <meta property="og:description" content="Re-Based is democratizing news media through AI-powered journalism and real-time news mapping.">
+    <meta property="og:image" content="https://www.re-based.org/rebased.jpg">
 
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.re-based.org/">
+    <meta property="twitter:title" content="Re-Based - Democratizing News Media">
+    <meta property="twitter:description" content="Re-Based is democratizing news media through AI-powered journalism and real-time news mapping.">
+    <meta property="twitter:image" content="https://www.re-based.org/rebased.jpg">
+
+    <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
     <style>
         @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
         * {
@@ -44,7 +54,7 @@
         }
 
         .logo {
-            width: 800px;
+            width: 200px;
             margin-bottom: 1rem;
         }
 
@@ -164,17 +174,70 @@
             border-top: 2px solid #000;
         }
 
+        .showcase-wrapper {
+            width: 100%;
+            max-width: 1534px;
+            margin: 0 auto;
+            padding: 0 1rem;
+            margin-bottom: 4rem;
+        }
+
+        .showcase-image {
+            width: 100%;
+            height: auto;
+            max-height: 867px;
+            object-fit: cover;
+            border: 1px solid #000;
+        }
+
+        /* Responsive Breakpoints */
+        @media (max-width: 1600px) {
+            .showcase-wrapper {
+                max-width: 100%;
+            }
+        }
+
+        @media (max-width: 1200px) {
+            .container {
+                max-width: 90%;
+            }
+            .logo {
+                width: 600px;
+            }
+        }
+
         @media (max-width: 768px) {
             .container {
                 padding: 1rem;
+                max-width: 100%;
             }
-
-            h1 {
-                font-size: 2rem;
+            .logo {
+                width: 90%;
+                max-width: 400px;
             }
-
             .features {
                 grid-template-columns: 1fr;
+            }
+            .showcase-wrapper {
+                padding: 0 0.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0.5rem;
+            }
+            .logo {
+                width: 95%;
+            }
+            .tagline {
+                font-size: 1rem;
+            }
+            .feature {
+                padding: 1rem;
+            }
+            .cta {
+                padding: 2rem 1rem;
             }
         }
     </style>
@@ -186,6 +249,10 @@
             <p class="tagline">Empowering Democracy Through Transparent News Media</p>
         </div>
     </header>
+
+    <div class="showcase-wrapper">
+        <img src="based.png" alt="Re-Based Platform Interface" class="showcase-image">
+    </div>
 
     <main class="container">
         <section class="section">
